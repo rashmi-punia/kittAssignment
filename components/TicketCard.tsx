@@ -60,7 +60,7 @@ const TicketCard = ({ticket,index} : TicketCardProps) => {
     </div>
       {
         showDetails && (
-          <TicketDetail setShowDetails={setShowDetails} />
+          <TicketDetail setShowDetails={setShowDetails} ticket={ticket} />
         )
       }
         </>

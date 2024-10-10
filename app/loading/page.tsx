@@ -23,8 +23,8 @@ const steps = [
 ];
 
 const page = () => {
-  const [loading, setLoading] = useState<boolean>(true);
-  const [openLocationForm, setOpenLocationForm] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(false);
+  const [openLocationForm, setOpenLocationForm] = useState<boolean>(true);
   const [currentStep, setCurrentStep] = useState<number>(0);
   const router = useRouter();
   const divRef = useRef<HTMLDivElement>(null);
