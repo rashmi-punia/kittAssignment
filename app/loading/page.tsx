@@ -23,7 +23,7 @@ const steps = [
 ];
 
 const page = () => {
-  const [loading, setLoading] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(true);
   const [openLocationForm, setOpenLocationForm] = useState<boolean>(false);
   const [currentStep, setCurrentStep] = useState<number>(0);
   const divRef = useRef<HTMLDivElement>(null);
@@ -96,15 +96,14 @@ const page = () => {
         >
           <h2>
             <span className="font-bold">OGT</span>
-            <span> Paris nrekjnkjrejk rencvkejnknejfn nkn kcnekj</span>
+            <span> Paris nrfwek rencn kcnekj</span>
           </h2>
           <h2>
             <span className="font-bold">OGT</span>
-            <span> Paris nrekjnkjrejk rencvkejnknejfn nkn kcnekj</span>
+            <span> Paris  khjjjjjjjj nrekjnk</span>
           </h2>
-          <h2>
-            <span className="font-bold">OGT</span>
-            <span> Paris nrekjnkjrejk rencvkejnknejfn nkn kcnekj</span>
+          <h2 className="font-bold">
+            OCT 12 - 5 NOV
           </h2>
           <Button variant={"secondary"} className="rounded-full w-[50px]">
             <CiSearch className="size-6" />
@@ -116,8 +115,8 @@ const page = () => {
           </Button>
         </Link>
       </div>
-        {loading && (
-      <div className="relative w-full h-1 bg-gray-200 overflow-hidden ">
+      {loading && (
+        <div className="relative w-full h-1 bg-gray-200 overflow-hidden ">
           <motion.span
             initial={{ x: "0%" }}
             animate={{ x: "100%" }}
@@ -128,9 +127,9 @@ const page = () => {
             }}
             className="absolute h-full w-full bg-blue-500 animate-pulse "
           ></motion.span>
-      </div>
-        )}
-      <div className="flex flex-col gap-3">
+        </div>
+      )}
+      <div className="flex items-center flex-col gap-3 my-12 w-full">
         {loading ? (
           <React.Fragment>
             {skeletionArray.map((_, index) => (
