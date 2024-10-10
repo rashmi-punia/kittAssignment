@@ -24,9 +24,8 @@ const steps = [
 
 const page = () => {
   const [loading, setLoading] = useState<boolean>(false);
-  const [openLocationForm, setOpenLocationForm] = useState<boolean>(true);
+  const [openLocationForm, setOpenLocationForm] = useState<boolean>(false);
   const [currentStep, setCurrentStep] = useState<number>(0);
-  const router = useRouter();
   const divRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -47,10 +46,6 @@ const page = () => {
       document.removeEventListener("mousedown", handleOutsideClick);
     };
   }, []);
-
-  if (!loading) {
-    router.push("");
-  }
 
   useEffect(() => {
     const timer = setInterval(() => {

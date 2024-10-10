@@ -18,7 +18,7 @@ export default function Home() {
           Flights
         </Button>
         <Location />
-        
+       
       </div>
     </section>
   );

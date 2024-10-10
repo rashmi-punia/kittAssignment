@@ -38,7 +38,7 @@ const ShowContent = ({data } : ShowContentProps) => {
 }
 
 const TicketCard = ({ticket,index} : TicketCardProps) => {
-  const [showDetails,setShowDetails] = useState<boolean>(true);
+  const [showDetails,setShowDetails] = useState<boolean>(false);
 
   return (
     <>

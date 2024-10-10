@@ -59,7 +59,8 @@ const Location = () => {
             setShowDepartureCalendar((prev) => !prev);
             setShowReturnCalendar(false);
           }}
-          className="flex relative h-14 gap-2 items-center rounded-md border border-zinc-200 bg-white px-3 w-[300px] py-2 text-sm ring-offset-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 dark:border-zinc-800 dark:bg-zinc-950 dark:ring-offset-zinc-950 dark:placeholder:text-zinc-400 dark:focus:ring-zinc-300">
+          className="flex relative h-14 gap-2 items-center rounded-md border border-zinc-200 bg-white px-3 w-[300px] py-2 text-sm ring-offset-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 dark:border-zinc-800 dark:bg-zinc-950 dark:ring-offset-zinc-950 dark:placeholder:text-zinc-400 dark:focus:ring-zinc-300"
+        >
           <FiCalendar />
           <span>Departure</span>
           {showDepartureCalendar && (
@@ -77,7 +78,7 @@ const Location = () => {
           ref={returnRef}
           onClick={() => {
             setShowReturnCalendar((prev) => !prev);
-            setShowDepartureCalendar(false); 
+            setShowDepartureCalendar(false);
           }}
           className="flex relative h-14 gap-2 items-center rounded-md border border-zinc-200 bg-white px-3 w-[300px] py-2 text-sm ring-offset-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 dark:border-zinc-800 dark:bg-zinc-950 dark:ring-offset-zinc-950 dark:placeholder:text-zinc-400 dark:focus:ring-zinc-300
 "
@@ -91,13 +92,12 @@ const Location = () => {
                 selected={returnDate}
                 onSelect={setReturnDate}
                 className="rounded-md border"
-                // onClose={() => setShowReturnCalendar(false)} // Close when selecting a date
               />
             </div>
           )}
         </div>
       </div>
-      <Link href={"/loading"} className="self-end">
+      <Link href={"/loading"} passHref className="self-end">
         <Button size={"lg"} className="w-[200px] bg-green-900">
           <CiSearch className="mx-2 size-5" />
           Search Flights
