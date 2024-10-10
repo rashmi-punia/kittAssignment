@@ -165,7 +165,7 @@ const page = () => {
             </div>
           </React.Fragment>
         ) : (
-          <div className="mx-36 my-12 flex flex-col gap-2">
+          <div className="mx-36 my-1 w-[1100px] flex flex-col gap-2">
             <span className="text-zinc-500 text-lg">
               Showing 365 of 767 results.
             </span>

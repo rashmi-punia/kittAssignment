@@ -44,7 +44,7 @@ const TicketCard = ({ticket,index} : TicketCardProps) => {
     <>
     <div onClick={() => setShowDetails(true)}
       key={index}
-      className="border flex gap-5 divide-x-2 justify-between hover:bg-blue-50 hover:-translate-y-0.5 rounded-md p-2"
+      className="border  flex gap-5 divide-x-2 justify-between hover:bg-blue-50 hover:-translate-y-0.5 rounded-md p-2"
       >
       <div className="flex-1">
         <ShowContent data={ticket.depature} />
